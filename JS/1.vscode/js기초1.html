@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript 기초 – Part 1</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to top left, #28b487, #7dd56f);
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 50px;
+      line-height: 1.3;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript 기초 – Part 1</h1>
+  <script>
+    // // console.log('헬로우월드');
+    // alert('헬로우월드');
+
+
+    // const COLOR_ORANGE = "#FF7F00";
+    // let color = COLOR_ORANGE;
+    // alert(color);
+    // let age = prompt('나이', 100);
+    // alert(`당신의 나이는 ${age}살 입니다.`);
+
+    // let isBoss = confirm("당신이 주인인가요?")
+    // console.log(isBoss)
+
+
+    // 문자열 String(값)
+    // 숫자 Number(문자열 불린)
+    // 불린 Boolean(문자열 숫자), (0, null, nan, '')일 경우에만 false
+    // let a = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
+    // let b = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2);
+
+    // alert(+ a + + b); // 12
+    let email = "drv98@naver.com"
+    // let result = email.indexOf('11')
+    // let result = email.slice(0, 3)
+    let result = email.substring(0, 2)
+
+    // let result = email.replace('v', 'b')
+
+    // console.log(result)
+
+    let year = prompt("올해는 몇년도입니까?")
+    if (year = 2022)
+      alert("정답입니다.")
+    else if (year == 2021) {
+      alert('작년입니다.')
+
+    }
+    else if (year == 2023) {
+      alert('내년입니다.')
+
+    }
+    else {
+      alert("틀렸습니다.")
+    }
+
+
+    // let accessAllowed;
+    // let age = prompt('나이를 입력해 주세요.', '');
+
+    // if (age > 18) {
+    //   accessAllowed = true;
+    // } else {
+    //   accessAllowed = false;
+    // }
+
+
+    // let accessAllowed = (age > 18) ? 성인 : 학생;
+    // alert(accessAllowed);
+
+    // for (let i = 1; i <= 100; i++) {
+    //   if (i % 15 == 0) console.log('삼삼오오')
+    //   else if (i % 3 == 0) console.log('삼삼')
+    //   else if (i % 5 == 0) console.log('오오')
+    //   else console.log(i)
+    // }
+
+    let browser = prompt("올해는 몇년도입니까?")
+    if (browser == 'Edge')
+      alert("Edge")
+    else if (year == 'Chrome', 'Firefox', 'Safari', 'Opera') {
+      alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.')
+    }
+
+    else {
+      alert("틀렸습니다.")
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>

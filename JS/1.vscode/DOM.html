@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 연습</title>
+    <style>
+        .cool:hover {
+            color: #0a0a0a;
+            text-shadow:
+                /* Color 1 */
+                1px 1px #61b4de,
+                /* Color 2 */
+                2px 2px #91c467,
+                /* Color 3 */
+                3px 3px #f3a14b,
+                /* Color 4 */
+                4px 4px #e84c50,
+                /* Color 5 */
+                5px 5px #4e5965;
+        }
+
+        .cool {
+            color: #ededed;
+            font-family: Oswald;
+            font-size: 4em;
+            transition: 0.5s all ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-shadow:
+                /* Color 1 */
+                1px 1px #61b4de, 2px 2px #61b4de, 3px 3px #61b4de, 4px 4px #61b4de, 5px 5px #61b4de,
+                /* Color 2 */
+                6px 6px #91c467, 7px 7px #91c467, 8px 8px #91c467, 9px 9px #91c467, 10px 10px #91c467,
+                /* Color 3 */
+                11px 11px #f3a14b, 12px 12px #f3a14b, 13px 13px #f3a14b, 14px 14px #f3a14b, 15px 15px #f3a14b,
+                /* Color 4 */
+                16px 16px #e84c50, 17px 17px #e84c50, 18px 18px #e84c50, 19px 19px #e84c50, 20px 20px #e84c50,
+                /* Color 5 */
+                21px 21px #4e5965, 22px 22px #4e5965, 23px 23px #4e5965, 24px 24px #4e5965, 25px 25px #4e5965;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>쇼핑 리스트</h1>
+    <button onclick="cool()">Cool버튼</button>
+    <p id="first">오늘 끝내자</p>
+    <p class="second">반드시!</p>
+    <ul>
+        <li random="23">노트북</li>
+        <li>가방</li>
+        <li>책</li>
+        <li>연습장</li>
+        <li>볼펜</li>
+        <li>지우개</li>
+    </ul>
+    <script>
+        function cool() {
+            console.log('클릭했음')
+            h1.classList.toggle('cool')
+        }
+
+
+        const first = document.getElementById('first')
+        first.style.color = 'blue'
+
+        const body = document.querySelector('body')
+        const h1 = document.querySelector('h1')
+        const list = document.querySelectorAll('li')
+
+        let random = list[0].getAttribute('random')
+        console.log(random)
+
+        list[0].setAttribute('random', 100)
+        random = list[0].getAttribute('random')
+        console.log(random)
+
+
+        body.style.backgroundColor = 'skyblue'
+        h1.className = 'myClass' // 클래스 입력
+        h1.classList.add('cl1') // 추가
+        h1.classList.remove('cl1') // 삭제
+        h1.classList.toggle('cl1')  // 있으면 삭제, 없으면 추가
+
+        h1.textContent = '플레이 리스트'
+        first.textContent = '내일 끝내자'
+    </script>
+</body>
+
+</html>
