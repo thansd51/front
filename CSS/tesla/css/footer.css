@@ -1,0 +1,46 @@
+.footer {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  margin: 40px auto 0 auto;
+
+
+}
+
+.footer ul {
+  max-width: 28%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  margin: 0 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer ul li a {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.tag {
+  line-height: 20px;
+  margin: auto;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  max-width: 35%;
+  text-align: center;
+
+}
+
+.tag a {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
